@@ -1,58 +1,196 @@
-.photo {
-    max-width: 60%;
-}
-body {
-    width: 100%;
-    height: 100vh;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: white;
-    color: black;
-    font-family: Tahoma;
-    font-size: 16px;
-}
-header {
-    text-align: center;
-}
-.experienceEnglish {
-    max-width: 60%;
+html {
+    scroll-behavior: smooth;
+} 
+
+* {
+    box-sizing: border-box;
     margin: 0;
-}
-.experienceRussian {
-    max-width: 60%;
-}
-footer {
-    text-align: center;
-    background: rgb(255,243,207);
-    background: linear-gradient(0deg, rgb(192, 184, 159) 0%, rgba(255,255,255,1) 100%);
-}
-.datework {
-    text-align: right;
-    width: 70%;
-    margin-top: 1%; 
-    margin-bottom: 1%; 
-}
-.date {
-    font-weight: bold;
-    width:30%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.tglink {
-    padding-bottom: 1%;
-}
-.info {
-    text-align: center;
-    font-size: large;
     padding: 0;
-    margin-top:0;
-    margin-bottom: 0;
-    background: rgb(240,197,127);
-    background: radial-gradient(circle, rgba(192, 184, 159,0.5467436974789917) 0%, rgba(192, 184, 159,0.7372198879551821) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    font-family: 'Playfair Display', serif;
 }
-.contacts {
-    text-align: right;
+
+body {
+    background-color: #ffffff;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #b3a992, #b3a992 1px, #ffffff 1px, #ffffff);
 }
-.arrow {
-    max-width: 2rem;
+
+header {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+img {
+    max-width: 10rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.toppic {
+    width: fit-content;
+    padding: 0.8rem;
+    margin: 0 1rem;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.title {
+    margin: 2rem;
+}
+
+.navpic {
+    width: 5rem;
+}
+
+.navbox {
+    width: max-content;
+    position: fixed;
+}
+
+
+@media(max-width:991px) {
+    .navbox {
+        display: none;;
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navtext {
+    padding-left: 1rem;
+}
+
+.navitem {
+    margin: 2rem;
+}
+
+.navbutton {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    flex-flow: wrap;
+    background-color: #ffffff;
+    padding: 2rem 4rem 1rem 1rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    align-items: end;
+}
+
+.about,
+.skills {
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #ffffff;
+    border: 1px dashed black;
+}
+
+.contact {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 10rem;
+    margin: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px dashed black;
+}
+
+.centralbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.contactme {
+    padding: 1rem;
+}
+
+.input {
+    padding: 1rem;
+}
+
+.submitbutton {
+    font-size: medium;
+    color: white;
+    background-color: #000000;
+}
+
+.abouttitle {
+    padding: 1rem;
+}
+
+/* .title {
+    background-color: #ffffff;
+    padding: 3rem;
+    border: 1px dotted black;
+} */
+
+h1 {
+    font-size: xxx-large;
+}
+
+.skillset {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    color: rgb(255, 255, 255);
+    background-color: #c6c6c6;
+}
+
+.graytext {
+    color: rgb(255, 255, 255);
+    background-color: #c6c6c6;
+}
+
+.skillslang {
+    padding: 1rem;
+}
+
+.textabout {
+    padding: 1rem;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
 }

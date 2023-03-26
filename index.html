@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Evelina - an Onlyfans page</title>
+    <title>Evelina Mukhamedyarova</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="top">
-        <h1>
-            Welcome, stranger! Let me introduce myself.
-        </h1>
-        <img class="photo" src="header.png" alt="EvelinaM">
-        
+    <header class="header" id="header">
+        <figure class="toppic">
+            <img class="headerpic" src="pic/headerpic.JPG" alt="headerpic">
+        </figure>
+        <h1 class="title">Hello, I'm Evelina!</h1>
     </header>
+    <!-- <nav class="mobilenav">
+        <div class="dropdown">
+            <div class="dropdown-content">
+            <a href="#header">Top</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact me</a>
+            </div>
+          </div>
+    </nav> -->
+    <nav class="navbox" id="navbox">
+        <ul>
+            <li class="navitem">
+                <a class="navbutton" href="#header">
+                    <img class="navpic" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="top"><span class="navtext">Top</span>
+                </a>
+            </li>
+            <li class="navitem">
+                <a class="navbutton" href="#about">
+                    <img class="navpic" src="https://cdn-icons-png.flaticon.com/512/61/61205.png" alt="about"><span class="navtext">About</span>
+                </a>
+            </li>
+            <li class="navitem">
+                <a class="navbutton" href="#skills">
+                    <img class="navpic" src="https://cdn-icons-png.flaticon.com/512/1979/1979375.png" alt="skills"><span class="navtext">Skills</span>
+                </a>
+            </li>
+            <li class="navitem">
+                <a class="navbutton" href="#contact">
+                    <img class="navpic" src="https://cdn-icons-png.flaticon.com/512/1250/1250973.png" alt="contact"><span class="navtext">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <section class="info">
-            <h2> I'm Evelina Mukhamedyarova</h2>
-            <p>Age: 27</p>
-            <p>Occupation: English Tutor</p>
-            <p>Marital Status: Single</p>
-            <p>Languages: Russian, English, German</p>
-            <p>Hobbies: Snowboarding, Dancing, Photography, Partying</p>
-            <p>Soft Skills: Communication, Time Management, Motivation</p>
+        <section class="about" id="about">
+            <h2 class="abouttitle">About</h2>
+            <div class="education">
+                <h4>Evelina Mukhamedyarova — Frontend Developer</h4>
+                <p class="textabout">A creative thinker, adept in software development and working with various data structures. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate in a team setting.  </p></div>
+            <div class="education">
+                <h4>Bachelor of Education</h4>
+                <p class="textabout">Bashkir State Pedagogical University named After M. Akmullah, September 2014 — June 2019</p></div>
+            <div class="education">
+                <h4>Hobbies</h4>
+                <p class="textabout">Snowboarding, Dancing, Traveling</p>
+            </div>
         </section>
-        <aside>
-        <section class="experienceEnglish">
-            <h3>Experience:</h3>
-            <p class="date">2020-Present</p><p class="datework"> Adults' English Tutor(Online)</p>
-            <p class="date">2019-2020</p><p class="datework"> Kids' English Teacher at a Private School(Beijing)</p>
-            <p class="date">2017-2019</p><p class="datework"> English Teacher at a Private School(Ufa)</p>
+        <section class="skills" id="skills">
+            <h2 class="skillslang">Skills <span class="graytext">&Languages</span></h2>
+            <div class="skillset">
+            <h4>HTML&CSS</h4>
+            <h4>Git</h4>
+            <h4>JavaScript</h4>
+            <h4>React+Redux</h4>
+            <h4>Node.js, Express</h4></div>
+            <div class="languages">
+            <h4>English</h4>
+            <h4>German</h4>
+            <h4>Russian</h4></div>
         </section>
-        <section class="experienceRussian">
-            <h3>Опыт работы:</h3>
-            <p class="date">2020-Настоящее время</p><p class="datework"> Репетитор английского языка для взрослых(Онлайн)</p>
-            <p class="date">2019-2020</p><p class="datework"> Учитель английского языка в частной школе для детей(Пекин)</p>
-            <p class="date">2017-2019</p><p class="datework"> Учитель английского языка в частной школе(Уфа)</p>
-        </section>
-    </aside>
-    <aside class="contacts">
-    <h4>P.S. I accept Visa, MasterCard and Pizzas</h4>
-    <p class="tglink">Follow the <a href="https://t.me/evelinaevva"><strong>LINK</strong></a> to contact me 
-    </p></aside>
     </main>
-
-
-    <footer>
-        <hr>
-        <a href="#top"><img src="https://cdn-icons-png.flaticon.com/512/44/44603.png" alt="arrow" class="arrow"></a>
+    <section class="centralbar">
+    <div class="contact" id="contact">
+        <form class='feedback' id="feedback">
+            <h2 class="contactme">Contact me</h2>
+            <div class="input">
+                <input type="text" class="" id="name" placeholder="Your Name"></div>
+            <div class="input">
+                <input type="email" class="" id="email" placeholder="Your Email"></div>
+            <div class="input">
+                <textarea class="message" id="message" rows="3" placeholder="Your Message"></textarea></div>
+            <button type="submit" class="submitbutton">Send</button>
+            </form></div>
+    </section>
+    
+    
+   <footer>
+        <p>2023 Evelina Mukhamedyarova</p>
     </footer>
+    
 </body>
 </html>
