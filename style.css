@@ -47,6 +47,27 @@ img {
 .navpic {
     width: 5rem;
 }
+.navpicmobile {
+    width: 1rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column wrap;
+    background-color: #ffffff;
+    padding: 1rem 0;
+}
+
+@media(min-width:991px) {
+    .dropdown {
+        display: none;
+    }
+    .mobilehome {
+        display: none;
+    }
+}
 
 .navbox {
     width: max-content;
@@ -58,6 +79,7 @@ img {
     .navbox {
         display: none;;
     }
+    
 }
 
 ul {
@@ -194,3 +216,11 @@ h1 {
     align-items: center;
     flex-flow: column wrap;
 }
+
+.mobilehomepic {
+    margin-left: 1rem;
+    width: 2rem;
+}
+
+
+
